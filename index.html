@@ -6,72 +6,108 @@
     <title>Neocipher Technologies - AI & ML Solutions in Nairobi</title>
     <meta name="description" content="Neocipher Technologies offers cutting-edge AI and ML solutions in Nairobi. Enhance your business with our software development and data analytics services.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="cssstyles.css">
+    <style>
+        #mainNav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Neocipher Technologies</h1>
-        <p>Unlocking Tomorrow's Potential, Today.</p>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Neocipher</a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNav"  >
+        <!-- <a class="navbar-brand" href="#" style="color: #000;">Neocipher</a> -->
+        <a class="navbar-brand" href="#">
+            <img src="./assets/0.png" alt="Logo" class="logo" style="  height: 50px;width: auto;margin-right: 10px;">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav  ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#" style="color: #000;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="#about" style="color: #000;">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#services" style="color: #000;">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projects" style="color: #000;">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
+                    <a class="nav-link" href="#blog" style="color: #000;">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
+                    <a class="nav-link" href="#contact" style="color: #000;">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <main class="container my-5">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Neocipher Technologies is a forward-thinking company that combines innovation with security. Our name reflects our mission: 'Neo' signifies new and modern approaches, while 'Cipher' emphasizes security and data protection. We specialize in data engineering, data science, data analytics, web development, and cybersecurity.</p>
-        </section>
-        <section id="services" class="my-5">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Software Development</h3>
-                    <p>We enhance software development practices for optimal efficiency and quality. This includes adopting Agile and DevOps methodologies, automating workflows, and improving team collaboration.</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#softwareModal">
-                        Learn More
-                    </button>
+    <header class=" text-white text-center py-2" style="z-index: -1;">
+        <h1 style="margin-top: 7%;">Neocipher Technologies</h1>
+        <p>Unlocking Tomorrow's Potential, Today.</p>
+        <div class="curve"></div>
+    </header>
+   
+    <main>
+        <section id="services">
+            <h1 class=" text-center mb-1">Our Services</h1>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-5 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">We enhance software development practices for optimal efficiency and quality. This includes adopting Agile and DevOps methodologies, automating workflows, and improving team collaboration.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#softwareModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>AI & ML Solutions</h3>
-                    <p>We develop intelligent models that learn and adapt, empowering your business with automation, predictive analytics, and unparalleled efficiency.</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aiMlModal">
-                        Learn More
-                    </button>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AI & ML Solutions</h5>
+                            <p class="card-text">We develop intelligent models that learn and adapt, empowering your business with automation, predictive analytics, and unparalleled efficiency.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aiMlModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Data Analytics</h3>
-                    <p>We use various tools, techniques, and frameworks to analyze data and extract actionable insights, enabling data-driven decision-making.</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dataAnalyticsModal">
-                        Learn More
-                    </button>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analytics</h5>
+                            <p class="card-text">We use various tools, techniques, and frameworks to analyze data and extract actionable insights, enabling data-driven decision-making.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dataAnalyticsModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Networking and Cyber Sec</h5>
+                            <p class="card-text">We use various tools, techniques, and frameworks to analyze data and extract actionable insights, enabling data-driven decision-making.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#networkingModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        
         <!-- Modals -->
         <div class="modal fade" id="softwareModal" tabindex="-1" role="dialog" aria-labelledby="softwareModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -135,14 +171,23 @@
                 </div>
             </div>
         </div>
+        <section id="about">
+            <h2 class=" text-center mb-3" >About Us</h2>
+                <p class="text-left container"> 
+                    Neocipher Technologies is a forward-thinking company that combines innovation with security. Our name reflects our mission: 'Neo' signifies new and modern approaches, while 'Cipher' emphasizes security and data protection. We specialize in data engineering, data science, data analytics, web development, and cybersecurity.
+                </p>
+        </section>
         <section id="contact" class="my-5">
-            <h2>Contact Us</h2>
-            <p>For any inquiries or further information, please contact us:</p>
-            <ul>
-                <li>Phone: +254799711783, +254796889020</li>
-                <li>Email: neociphertechnologies@gmail.com</li>
-                <li>Location: Nairobi, Kenya</li>
-            </ul>
+            <h2  class=" text-center mb-3">Contact Us</h2>
+            <p  class=" text-center">For any inquiries or further information, please contact us:</p>
+            <div class="text-center">
+                <ul>
+                    <li>Phone: +254799711783, +254796889020</li>
+                    <li>Email: neociphertechnologies@gmail.com</li>
+                    <li>Location: Nairobi, Kenya</li>
+                </ul>
+            </div>
+        
         </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">

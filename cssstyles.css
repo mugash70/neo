@@ -4,8 +4,11 @@ body {
 }
 
 header {
-    background: #007bff;
+    background:  #4682B4;
     color: white;
+    position: relative;
+    /* z-index: 1; Lower than the navbar */
+    height: 70vh;
 }
 
 main {
@@ -15,4 +18,66 @@ main {
 footer {
     background: #333;
     color: white;
+}
+
+/* section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #3c31dd;
+} */
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 51%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 100%, 99%);
+    z-index: -1;
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 51%;
+    width: 55%;
+    height: 100%;
+    background-color: #4682B4;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+.text-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    max-width: 50%; 
+    margin: 0 auto; 
+}
+
+.text-container p {
+    margin: 0;
+    line-height: 1.6; 
+}
+p.text-left {
+    text-align: left; /* Aligns text to the left */
+    max-width: 600px; /* Adjust this value to control the width and the number of lines */
+    margin: 0; /* Removes default margin */
+    line-height: 1.6; /* Adjusts line height for better readability */
+    /* Optional: Add padding if needed for spacing */
 }
